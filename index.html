@@ -4,27 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Study Hub</title>
-    <script type="module" crossorigin src="./assets/index-28hWZf6o.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-UXsKAMoE.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Noto+Serif+SC:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="./assets/index-xNKa0cND.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Dr79eN_g.css">
   </head>
   <body>
     <div class="app">
       <header class="app-header">
-        <a href="#/" class="app-name" data-i18n="appName">Study Hub</a>
+        <a href="#/" class="app-name"
+          ><span class="brand-dot" aria-hidden="true"></span><span class="visually-hidden" data-i18n="appName">Study Hub</span></a
+        >
         <a href="#/study" id="timer-badge" class="timer-badge" hidden></a>
         <a href="#/help" class="feedback-link help-link"
-          ><span aria-hidden="true">❓</span> <span class="feedback-label" data-i18n="helpLink">Help</span></a
+          ><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" />
+            <path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .8-1 1.5V14M12 17h.01" /></svg
+          ><span class="feedback-label" data-i18n="helpLink">Help</span></a
         >
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLScbCNpsOdUnv3F6_JAb1Q94YL1zr46ClAlK4EQvzJ3_nzqURA/viewform"
-          class="feedback-link"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><span aria-hidden="true">💬</span> <span class="feedback-label" data-i18n="feedbackLink">Feedback</span></a
+        <a href="#/feedback" class="feedback-link"
+          ><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 18V7a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H8z" />
+            <path d="M8 9h8M8 12h5" /></svg
+          ><span class="feedback-label" data-i18n="feedbackLink">Feedback</span></a
         >
         <button type="button" id="sound-toggle" class="feedback-link sound-toggle"></button>
         <label class="language-picker">
-          <span aria-hidden="true">🌐</span>
+          <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" />
+            <path d="M3 12h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9s1-6.5 3.5-9z" />
+          </svg>
           <span class="visually-hidden" data-i18n="languageLabel">Language</span>
           <select id="language-select"></select>
         </label>
